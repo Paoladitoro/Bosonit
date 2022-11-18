@@ -1,18 +1,78 @@
 body {
-    font-family: Helvetica;
-    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.9), rgba(136, 136, 206, 0.7) ), url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
-    color: white;
-    line-height: 1.5;
-  }
-  
-  #survey-form {
-    background-color: rgba(27, 27, 50, 0.8) 
-  }
-  
-  #survey-form {
-    padding: 34px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-  }
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.9),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url("https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg");
+  color: white;
+  line-height: 1.5;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+main {
+  text-align: center;
+  padding-top: 18px;
+  line-height: 1;
+  padding-bottom: 12px;
+}
+
+h1 {
+  font-weight: 380;
+  font-size: 40px;
+}
+
+#description {
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+#survey-form {
+  background-color: rgba(27, 27, 50, 0.8);
+}
+
+#survey-form {
+  padding: 34px;
+  border-radius: 5px;
+  max-width: 45%;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.input-modifications {
+  border-radius: 4px;
+  width: 100%;
+  height: 38px;
+  border: 0;
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 12px;
+}
+
+.comment {
+  width: 100%;
+  height: 104px;
+  border: 0; 
+  font-size: 18px;
+  padding: 8px;
+  margin-top: 12px;
+}
+
+#submit {
+  background-color: #37af65;
+  font-size: 20px;
+  border: 0;
+  color: white;
+  width: 100%;
+  height: 44px;
+  border-radius: 4px;
+}
+
+input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+}

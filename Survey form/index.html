@@ -5,14 +5,17 @@
     <title>Survey Form</title>
   </head>
   <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">
-      <em>Thank you for taking the time to help us improve the platform</em>
-    </p>
+    <main>
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        <em>Thank you for taking the time to help us improve the platform</em>
+      </p>
+    </main>
     <form id="survey-form">
       <div>
         <label id="name-label" for="name">Name</label><br />
         <input
+          class="input-modifications"
           type="text"
           id="name"
           name="name"
@@ -24,6 +27,7 @@
       <div>
         <label id="email-label" for="email">Email</label><br />
         <input
+          class="input-modifications"
           type="email"
           id="email"
           name="email"
@@ -34,14 +38,27 @@
       <br />
       <div>
         <label id="number-label" for="number">Age</label><br />
-        <input type="number" id="number" name="number" placeholder="Age" />
+        <input
+          class="input-modifications"
+          type="number"
+          id="number"
+          name="number"
+          placeholder="Age"
+          min="12"
+          max="90"
+        />
       </div>
       <br />
       <div>
         <label for="dropdown"
           >Which option best describes your current role?</label
         ><br />
-        <select id="dropdown" name="dropdown" required>
+        <select
+          class="input-modifications"
+          id="dropdown"
+          name="dropdown"
+          required
+        >
           <option disabled selected value>Select current role</option>
           <option value="student">Student</option>
           <option value="Full time job">Full time job</option>
@@ -69,7 +86,12 @@
         <label for="dropdown"
           >What is your favorite feature of freeCodeCamp?</label
         ><br />
-        <select id="dropdown" name="dropdown" required>
+        <select
+          class="input-modifications"
+          id="dropdown"
+          name="dropdown"
+          required
+        >
           <option disabled selected value>Select and option</option>
           <option value="challenges">Challenges</option>
           <option value="Projects">Projects</option>
@@ -80,6 +102,7 @@
       </div>
       <br />
       <div>
+        <p>What would you like to see improved?</p>
         <input
           type="checkbox"
           id="Front-end Projects"
@@ -143,10 +166,12 @@
         />
         <label for="Additional Courses">Additional Courses</label><br />
       </div>
+      <br />
       <div>
         <label for="comments">Any comments or suggestions?</label><br />
 
         <textarea
+          class="comment"
           id="comments"
           name="comments"
           rows="4"
